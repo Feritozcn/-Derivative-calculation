@@ -49,6 +49,8 @@ def calc_deriative(function):
                 res.append(i[-1])
             elif i[1].isdigit():
                 res.append(i[:2])
+            elif i[0].isdigit():
+                res.append(i[0])
         elif i=="x" or i=="-x" or i=="+x":
             check=None
             if i[0]=="-":
